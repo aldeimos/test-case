@@ -1,0 +1,52 @@
+.author-creator-row {
+  position: relative;
+
+  display: flex;
+
+  &__column {
+    width: 200px;
+
+    input {
+      width: 100%;
+    }
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  &__delete-icon {
+    position: absolute;
+    top: 44px;
+    right: 140px;
+
+    button {
+      position: relative;
+
+      width: 20px;
+      height: 20px;
+
+      background-color: transparent;
+
+      &::before,
+      &::after {
+        content: "";
+
+        position: absolute;
+
+        width: 2px;
+        height: 100%;
+
+        background-color: var(--primary);
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

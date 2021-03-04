@@ -1,0 +1,49 @@
+.book-form {
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cover {
+    width: 30%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    > div {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__authors {
+    &-title {
+      display: block;
+      margin-bottom: 12px;
+
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  &__error {
+    color: var(--error);
+  }
+
+  &__submit {
+    width: 300px;
+    margin-top: 14px;
+
+    button {
+      width: 100%;
+    }
+  }
+}

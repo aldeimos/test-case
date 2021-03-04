@@ -1,0 +1,19 @@
+.book-list {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .book {
+    &:not(:nth-child(4n)) {
+      margin-right: 30px;
+    }
+  }
+
+  .link__buttonLike {
+    margin: 0 auto;
+  }
+}

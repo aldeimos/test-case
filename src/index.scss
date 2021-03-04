@@ -1,6 +1,18 @@
+:root {
+  --accent: #191970;
+  --accent_hover: #1e90ff;
+  --primary: #010101;
+  --secondary: #767579;
+  --tertiary: #ffffff;
+  --background: #fdfff5;
+  --error: 	#ff3333;
+}
+
 body {
   margin: 0;
   padding: 0;
+
+  background-color: var(--background);
 }
 
 * {
@@ -15,4 +27,25 @@ img {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+main {
+  padding: 20px 0;
 }

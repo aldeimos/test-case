@@ -1,0 +1,20 @@
+.sort {
+  display: flex;
+  margin-bottom: 20px;
+
+  &__label {
+    margin-right: 24px;
+
+    font-size: 18px;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+
+    button {
+      height: 100%;
+      margin-right: 14px;
+    }
+  }
+}
